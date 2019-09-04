@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D111FAAF231EB1F4004B3935 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D111FAAE231EB1F4004B3935 /* assets.xcassets */; };
 		D1202AFB231D242F00ED1712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1202AFA231D242F00ED1712 /* AppDelegate.swift */; };
 		D1202AFD231D242F00ED1712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1202AFC231D242F00ED1712 /* ViewController.swift */; };
 		D1202B00231D242F00ED1712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1202AFE231D242F00ED1712 /* Main.storyboard */; };
-		D1202B02231D243000ED1712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1202B01231D243000ED1712 /* Assets.xcassets */; };
 		D1202B05231D243000ED1712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1202B03231D243000ED1712 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D111FAAE231EB1F4004B3935 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		D1202AF7231D242F00ED1712 /* I am Rich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I am Rich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1202AFA231D242F00ED1712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1202AFC231D242F00ED1712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1202AFF231D242F00ED1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D1202B01231D243000ED1712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1202B04231D243000ED1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1202B06231D243000ED1712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +57,7 @@
 				D1202AFA231D242F00ED1712 /* AppDelegate.swift */,
 				D1202AFC231D242F00ED1712 /* ViewController.swift */,
 				D1202AFE231D242F00ED1712 /* Main.storyboard */,
-				D1202B01231D243000ED1712 /* Assets.xcassets */,
+				D111FAAE231EB1F4004B3935 /* assets.xcassets */,
 				D1202B03231D243000ED1712 /* LaunchScreen.storyboard */,
 				D1202B06231D243000ED1712 /* Info.plist */,
 			);
@@ -123,7 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1202B05231D243000ED1712 /* LaunchScreen.storyboard in Resources */,
-				D1202B02231D243000ED1712 /* Assets.xcassets in Resources */,
+				D111FAAF231EB1F4004B3935 /* assets.xcassets in Resources */,
 				D1202B00231D242F00ED1712 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "I am Rich/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joneshshrestha.I-am-Rich";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "I am Rich/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joneshshrestha.I-am-Rich";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
