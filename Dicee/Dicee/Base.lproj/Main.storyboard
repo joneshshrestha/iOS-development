@@ -52,7 +52,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="diceImageView1" destination="MH0-d4-bhB" id="gSD-Dh-48b"/>
+                        <outlet property="diceImageView1" destination="MH0-d4-bhB" id="yC6-vQ-1q6"/>
                         <outlet property="diceImageView2" destination="76n-pV-cGT" id="cQy-Jv-1MC"/>
                     </connections>
                 </viewController>
