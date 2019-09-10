@@ -1,5 +1,7 @@
+import UIKit
+
 func BMICalculator(weight: Double, height: Double) {
-    let BMI = weight / (height * height)
+    let BMI = weight / pow(height, 2)
     if BMI > 25 {
         print("Your BMI is \(BMI), you're overweight")
     } else if BMI > 18.5 && BMI < 25 {
