@@ -5,3 +5,6 @@
 - [x] Magic 8 Ball
 - [x] Dicee
 - [x] Xylophone
+
+UIKit Classes:
+![UIKit Classes](https://finalizedotcom.files.wordpress.com/2012/12/uikit_classes.jpg)
