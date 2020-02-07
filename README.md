@@ -6,5 +6,5 @@
 - [x] Dicee
 - [x] Xylophone
 
-UIKit Classes:
+**UIKit Classes**
 ![UIKit Classes](https://finalizedotcom.files.wordpress.com/2012/12/uikit_classes.jpg)
