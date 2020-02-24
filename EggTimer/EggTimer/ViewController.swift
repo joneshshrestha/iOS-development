@@ -13,7 +13,9 @@ class ViewController: UIViewController {
     let eggTime = ["Soft": 5, "Medium": 7, "Hard": 12]
     
     @IBAction func hardnessSelected(_ sender: UIButton) {
-        let hardness = sender.currentTitles
-    
-
+        let hardness = sender.currentTitle!
+        let result = eggTime[hardness]!
+        print(result)
+        
+    }
 }
