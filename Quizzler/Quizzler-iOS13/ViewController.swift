@@ -1,7 +1,6 @@
 //
 //  ViewController.swift
 //  Quizzler-iOS13
-//
 
 import UIKit
 
@@ -13,9 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     
     let quiz = [
-    "Four + Two equals Six.",
-    "Five - Three is greater than One",
-    "Three + Eight is than than Ten"
+    ["Four + Two equals Six.", "True"],
+    ["Five - Three is greater than One", "True"],
+    ["Three + Eight is than than Ten", "False"]
     ]
     
     var questionNumber = 0
@@ -29,12 +28,20 @@ class ViewController: UIViewController {
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         questionNumber += 1
         
+        let userAnswer = sender.currentTitle //True, False
+        let actualAnswer = quiz[questionNumber][1]
+        
+        if userAnswer == actualAnswer {
+            print("Right")
+        } else {
+            print("Wrong!")
+        }
+        
         updateUI()
     }
     
     func updateUI() {
-        questionLabel.text = quiz[questionNumber]
-        
+        questionLabel.text = quiz[questionNumber][0]
     }
 }
 
