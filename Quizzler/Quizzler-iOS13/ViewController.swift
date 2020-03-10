@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        questionNumber += 1
         
         let userAnswer = sender.currentTitle //True, False
         let actualAnswer = quiz[questionNumber][1]
@@ -35,6 +34,12 @@ class ViewController: UIViewController {
             print("Right")
         } else {
             print("Wrong!")
+        }
+        
+        if questionNumber + 1 < quiz.count {
+            questionNumber += 1
+        } else {
+            questionNumber = 0
         }
         
         updateUI()
