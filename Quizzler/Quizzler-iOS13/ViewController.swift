@@ -12,9 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     
     let quiz = [
-    ["Four + Two equals Six.", "True"],
-    ["Five - Three is greater than One", "True"],
-    ["Three + Eight is than than Ten", "False"]
+        Question(text: "Four + Two equals Six.", answer: "True"),
+        Question(text: "Five - Three is greater than One", answer: "True"),
+        Question(text: "Three + Eight is than than Ten", answer: "False")
     ]
     
     var questionNumber = 0
