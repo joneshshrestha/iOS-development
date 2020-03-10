@@ -15,11 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var questionLabel: UILabel!
     
+    let quiz = [
+    "Four + Two equals Six.",
+    "Five - Three is greater than One",
+    "Three + Eight is than than Ten"
+    ]
     
+    var questionNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        questionLabel.text = quiz[questionNumber]
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {

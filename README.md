@@ -5,6 +5,7 @@
 - [x] Magic 8 Ball
 - [x] Dicee
 - [x] Xylophone
+- [x] Egg Timer
 
 **UIKit Classes**
 ![UIKit Classes](https://finalizedotcom.files.wordpress.com/2012/12/uikit_classes.jpg)
