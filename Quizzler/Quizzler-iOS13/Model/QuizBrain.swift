@@ -23,14 +23,17 @@ struct QuizBrain {
         Question(q: "No piece of square dry paper can be folded in half more than 7 times.", a: "False"),
         Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
     ]
-}
-
-var questionNumber = 0
-
-func checkAnswer(_ userAnswer: String) {
-    if userAnswer == quiz[questionNumber].answer {
-        //User got it right
-    } else {
-        //User got it wrong
+    
+    
+    var questionNumber = 0
+    
+    func checkAnswer(_ userAnswer: String) -> Bool{
+        if userAnswer == quiz[questionNumber].answer {
+            return true
+        } else {
+            return false
+        }
+        
+        
     }
 }

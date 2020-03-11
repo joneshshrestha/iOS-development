@@ -1,4 +1,3 @@
-//
 //  ViewController.swift
 //  Quizzler-iOS13
 
@@ -18,13 +17,13 @@ class ViewController: UIViewController {
         
         updateUI()
     }
-
+    
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         
         let userAnswer = sender.currentTitle! //True, False
-        quizBrain.checkAnswer(userAnswer)
+        let userGotItRight = quizBrain.checkAnswer(userAnswer)
         
-        if userAnswer == actualAnswer {
+        if userGotItRight {
             sender.backgroundColor = UIColor.green
         } else {
             sender.backgroundColor = UIColor.red
@@ -37,7 +36,7 @@ class ViewController: UIViewController {
         }
         
         Timer.scheduledTimer(timeInterval: 0.2,
-        target:self, selector: #selector(updateUI), userInfo:nil, repeats:false)
+                             target:self, selector: #selector(updateUI), userInfo:nil, repeats:false)
         
     }
     
