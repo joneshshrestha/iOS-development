@@ -1,5 +1,6 @@
 //  ViewController.swift
 //  Quizzler-iOS13
+//  Created by Jonesh Shrestha on 3/10/20.
 
 import UIKit
 
@@ -9,6 +10,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var quizBrain = QuizBrain()
     
@@ -39,6 +41,7 @@ class ViewController: UIViewController {
     @objc func updateUI() {
         progressBar.progress = quizBrain.getProgress()
         questionLabel.text = quizBrain.getQuestionText()
+        scoreLabel.text = "Score: \(quizBrain.getScore())"
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
         
