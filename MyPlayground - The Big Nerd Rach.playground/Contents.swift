@@ -14,3 +14,9 @@ if population < 10000 {
     print("\(townName) is pretty big!")
 }
 
+var hasPostOffice: Bool = false
+
+if !hasPostOffice {
+    print("Where do we buy the stamps?")
+}
+
