@@ -20,3 +20,18 @@ if !hasPostOffice {
     print("Where do we buy the stamps?")
 }
 
+print("the maximum value of Int is \(Int.max)")
+print("the minimum value of Int is \(Int32.max)")
+
+//let numberOfPages: Int = 10 //declearing Int explicitly
+//let numberOfPages = 10 //declearing Int implictly
+
+let y: Int8 = 120
+let z = y &+ 10
+
+let d1 = 1.1 + 0.1
+let d2: Double = 1.1
+if d1 == 1.2 {
+    print ("d1 is equal to d2")
+}
+
