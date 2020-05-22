@@ -35,3 +35,17 @@ if d1 == 1.2 {
     print ("d1 is equal to d2")
 }
 
+var statusCode: Int = 404
+var errorString: String
+switch statusCode {
+case 401:
+    errorString = "Bad request"
+case 402:
+    errorString = "Unauthorized"
+case 403:
+    errorString = "Forbidden"
+case 404:
+    errorString = "Not Found"
+default:
+    errorString = "None"
+}
