@@ -60,3 +60,6 @@ case let unknownCode where (unknownCode >= 200 && unknownCode < 300) || unknownC
 default:
     errorString = "Unexpected error encountered."
 }
+
+let error = (code: statusCode, error: errorString)  //tuple
+print(error.code, error.error)
