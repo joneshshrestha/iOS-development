@@ -35,12 +35,12 @@ if d1 == 1.2 {
     print ("d1 is equal to d2")
 }
 
-var statusCode: Int = 404
-var errorString: String = "The request failed:"
+var statusCode: Int = 402
+var errorString: String = "The request failed: "
 switch statusCode {
 case 401...404:
-    errorString = "There was something wrong with the request. "
+    errorString = "There was something wrong with the request \(statusCode)."
     fallthrough
 default:
-    errorString += "Please review the request and try again."
+    errorString += " Please review the request and try again. \(statusCode) is not a known error code."
 }
