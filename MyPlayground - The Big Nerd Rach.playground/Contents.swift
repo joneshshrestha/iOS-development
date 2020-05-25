@@ -36,16 +36,11 @@ if d1 == 1.2 {
 }
 
 var statusCode: Int = 404
-var errorString: String
+var errorString: String = "The request failed:"
 switch statusCode {
-case 401:
-    errorString = "Bad request"
-case 402:
-    errorString = "Unauthorized"
-case 403:
-    errorString = "Forbidden"
-case 404:
-    errorString = "Not Found"
+case 401...404:
+    errorString = "There was something wrong with the request. "
+    fallthrough
 default:
-    errorString = "None"
+    errorString += "Please review the request and try again."
 }
