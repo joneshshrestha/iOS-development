@@ -63,3 +63,68 @@ default:
 
 let error = (code: statusCode, error: errorString)  //tuple
 print(error.code, error.error)
+
+let error = (code: statusCode, error: errorString)
+error.code
+error.error
+
+let firstErrorCode = 404
+let secondErrorCode = 200
+let errorCodes = (firstErrorCode, secondErrorCode)
+
+switch errorCodes {
+case(404, 404):
+    print("No items found.")
+case(404, _):
+    print("First item not found.")
+case(_, 404):
+    print("Second item not found.")
+default:
+    print("All items found")
+}
+
+let age = 19
+
+if case 18...35 = age, age >= 21 {
+    print ("In cool demographic and of drinking age.")
+}
+
+let point = (x: 1, y: 4)
+
+switch point {
+case let q1 where (point.x > 0) && (point.y > 0):
+    print("\(q1) lies in quadrant 1")
+case let q2 where (point.x > 0) && (point.y < 0):
+    print("\(q2) lies in quadrant 2")
+case let q3 where (point.x < 0) && (point.y < 0):
+    print("\(q3) lies in quadrant 3")
+case let q4 where (point.x > 0) && (point.y < 0):
+    print("\(q4) lies in quadrant 4")
+case (_, 0):
+    print("\(point) lies in y-axis")
+case (0, _):
+    print("\(point) lies in x-axis")
+default:
+    print("Case not covered.")
+}
+
+//Silver Challenge
+
+let tempAge = 21
+
+if case 18...30 = tempAge, tempAge >= 21, tempAge < 30 || tempAge > 39 {
+    print("\(tempAge) is in the cool demographics, of drinking age in the United States and not in their thirties")
+}
+
+//for-loop
+var myFirstInt: Int = 0
+
+for _ in 1...5 {
+    myFirstInt += 1
+    myFirstInt
+    print(myFirstInt)
+}
+
+for i in 1...100 where i % 50 == 0 {
+    print(i)
+}
